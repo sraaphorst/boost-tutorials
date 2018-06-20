@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(BoostGraphTutorial)
+project(BoostTutorial)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -14,8 +14,9 @@ set(CMAKE_CXX_STANDARD 17)
 add_definitions(-DBOOST_LOG_DYN_LINK)
 
 find_package(Threads)
-find_package(Boost 1.65 COMPONENTS log system REQUIRED)
+find_package(Boost 1.67 COMPONENTS log system serialization REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
 add_subdirectory(graph)
+add_subdirectory(serialization)
