@@ -6,6 +6,7 @@ set(apps
         example64_5
         example64_6
         example64_7
+        enums
         )
 
 foreach (app ${apps})

@@ -20,3 +20,4 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 add_subdirectory(graph)
 add_subdirectory(serialization)
+add_subdirectory(signals2)

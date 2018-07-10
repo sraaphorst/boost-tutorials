@@ -6,7 +6,9 @@ set(apps
         bfs_paths
         bfs_distpaths
         dijkstra_paths
-        dijkstra_userdef)
+        dijkstra_userdef
+        play_props)
+
 
 foreach (app ${apps})
     add_executable(${app} ${app}.cpp)
